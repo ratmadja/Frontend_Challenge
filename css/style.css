@@ -1,0 +1,223 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(210,210,210);
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.container {
+  background-color: rgb(255,255,255);
+  margin: auto;
+  width: 375px;
+  height: 667px;
+  position:relative;
+}
+
+.status-bar {
+  background-color: rgb(102, 28, 168);
+  height: 20px;
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav-bar {
+  background-color: rgb(102, 28, 168);
+  height: 44px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  display: flex;
+  font-size: 17px;
+  z-index: 1;
+}
+
+/*nav-bar styling*/
+.nav-left {
+  display: inherit;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 8px;
+  width: 25%;
+  color: white;
+  font-weight:100;
+}
+
+.nav-left h1 {
+  padding: 5px;
+}
+
+.nav-center {
+  display: inherit;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: white;
+  font-weight:300;
+  font-size: 1.06em;
+}
+
+.nav-right {
+  width: 25%;
+  text-align: right;
+  padding-right: 16px;
+  display: inherit;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+/*end of nav-bar styling*/
+
+/*start of map styling*/
+.map {
+  position: relative;
+  top: 64px;
+  height: 260px;
+  background-repeat:no-repeat;
+  background-image: url(../images/icon-station-location.png),
+                    url(../images/icon-my-location.png),
+                    url(../images/map.png);
+  background-position:45% 43%,
+                      14% 15%,
+                      center;
+}
+
+.walkbox {
+  position: absolute;
+  width: 58px;
+  height: 22px;
+  background-color: rgb(255,255,255);
+  bottom: 16px;
+  left: 16px;
+  border: 1px;
+  border-color:#545454;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.walkbox h3 {
+  font-size:.8125em;
+  color: #545454;
+  padding-left: 10px;
+}
+/*end of map styling*/
+
+/*start of main overflow screen*/
+main {
+    height: 343px;
+    margin-top: 64px;
+    overflow: scroll;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+/*end of main overflow screen*/
+
+/*start of bus-routes styling*/
+.bus-routes {
+  height: 720px;
+  margin-left:16px;
+  margin-bottom: 53px;
+  overflow-y: hidden;
+}
+
+.route-row {
+  border-bottom: 1px solid rgb(200,199,204);
+  height:80px;
+  display: flex;
+}
+
+.route-row h1 {
+  font-size: 1.06em;
+  font-weight:100;
+  color: #545454;
+  margin-bottom: 3px;
+}
+
+.route-row h3 {
+  font-size: .8125em;
+  line-height:1.4;
+  color: #8F8E94;
+}
+
+.route-row-left {
+  width: 59px;
+  padding-top: 12px;
+}
+
+.route-row-middle {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.route-row-right {
+  width: 50px;
+  padding-top: 12px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.route-row-right h1 {
+  color: #8F8E94;
+  padding-right: 8px;
+}
+
+.icon-rightcaret {
+  padding-top: 2px;
+}
+
+.icon-service {
+  padding-right: 8px;
+}
+
+/*end of bus-routes styling*/
+
+/* start of tab-bar styling */
+.tab-bar {
+  border-top: 1px solid rgb(200,199,204);
+  background-color: rgb(255, 255, 255);
+  height: 53px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.tab-bar-cells {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-bar-cells h4{
+  font-size: .65em;
+  font-weight:100;
+  color: #868686;
+  padding-top: 4px;
+}
