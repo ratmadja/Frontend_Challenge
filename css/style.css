@@ -39,7 +39,6 @@ body {
   right: 0;
   top: 20px;
   display: flex;
-  font-size: 17px;
   z-index: 1;
 }
 
@@ -53,6 +52,7 @@ body {
   width: 25%;
   color: white;
   font-weight:100;
+  font-size: 1.06em;
 }
 
 .nav-left h1 {
@@ -66,7 +66,7 @@ body {
   align-items: center;
   width: 50%;
   color: white;
-  font-weight:300;
+  font-weight:350;
   font-size: 1.06em;
 }
 
@@ -123,12 +123,12 @@ main {
     height: 343px;
     margin-top: 64px;
     overflow: scroll;
-
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
+
 /*end of main overflow screen*/
 
 /*start of bus-routes styling*/
@@ -136,7 +136,6 @@ main {
   height: 720px;
   margin-left:16px;
   margin-bottom: 53px;
-  overflow-y: hidden;
 }
 
 .route-row {
